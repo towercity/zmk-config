@@ -21,21 +21,19 @@
         compatible = "zmk,keymap";
 
         base {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+             display-name = "Base";
+           
             bindings = <
-&kp TAB    &kp Q               &kp W               &kp E           &kp R             &kp T                   &kp Y                  &kp U                &kp I            &kp O                &kp P                       &kp BSPC
-&kp LCTRL  &mt LEFT_COMMAND A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &lt 2 F           &kp G                   &kp H                  &lt 1 J              &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RIGHT_GUI SINGLE_QUOTE  &kp SQT
-&kp LSHFT  &kp Z               &kp X               &kp C           &kp V             &kp B                   &kp N                  &kp M                &kp COMMA        &kp DOT              &kp FSLH                    &kp ESC
-                                                   &lt 4 TAB       &mt LEFT_GUI ESC  &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT SPACE  &lt 3 RIGHT_BRACKET  &kp BACKSLASH
+&trans  &kp Q               &kp W           &kp E               &kp R        &kp T                   &kp Y                  &kp U                &kp I                &kp O            &kp P                       &trans
+&trans  &mt LEFT_COMMAND A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &lt 2 F      &kp G                   &kp H                  &lt 1 J              &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SINGLE_QUOTE  &trans
+&trans  &kp Z               &kp X           &kp C               &kp V        &kp B                   &kp N                  &kp M                &kp COMMA            &kp DOT          &kp FSLH                    &trans
+                                            &kp ESC             &lt 4 MINUS  &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT SPACE  &lt 3 RIGHT_BRACKET  &kp BACKSLASH
             >;
         };
 
         nums {
+             display-name = "Nums";
+
             bindings = <
 &trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &trans  &trans  &trans  &trans  &sys_reset  &trans
 &trans  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &trans  &trans  &trans  &trans  &trans      &trans
@@ -45,6 +43,8 @@
         };
 
         raise {
+             display-name = "Raise";
+
             bindings = <
 &trans  &sys_reset  &kp RIGHT       &kp UP          &trans  &trans     &trans     &trans    &kp UP    &trans     &kp BACKSPACE  &trans
 &trans  &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &trans  &trans     &kp CAPS   &kp LEFT  &kp DOWN  &kp RIGHT  &kp SEMI       &trans
@@ -54,6 +54,8 @@
         };
 
         sym {
+             display-name = "Sym";
+
             bindings = <
 &trans  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)     &trans  &trans  &trans  &trans  &trans  &trans
@@ -63,6 +65,8 @@
         };
 
         func {
+             display-name = "Func";
+
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
