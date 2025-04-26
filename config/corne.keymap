@@ -43,10 +43,10 @@
         raise {
             display-name = "Raise";
             bindings = <
-&trans  &kp LPAR          &kp UP             &kp RPAR   &trans   &trans                &trans    &trans    &kp UP    &trans     &kp BACKSPACE  &trans
-&trans  &kp LEFT          &kp DOWN_ARROW     &kp RIGHT  &trans   &trans                &kp CAPS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SQT        &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans   &trans                &trans    &trans    &trans    &trans     &kp ENTER      &trans
-                                             &trans     &kp TAB  &mt LEFT_SHIFT TAB    &kp RET   &trans    &trans
+&trans  &kp LPAR          &kp UP             &kp RPAR   &trans   &trans                &trans    &trans       &kp UP         &trans     &kp BACKSPACE  &trans
+&trans  &kp LEFT          &kp DOWN_ARROW     &kp RIGHT  &trans   &trans                &kp CAPS  &kp LEFT     &kp DOWN       &kp RIGHT  &kp SQT        &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans   &trans                &trans    &trans       &trans         &trans     &kp ENTER      &trans
+                                             &trans     &kp TAB  &mt LEFT_SHIFT TAB    &kp RET   &kp PAGE_UP  &kp PAGE_DOWN
             >;
         };
 
