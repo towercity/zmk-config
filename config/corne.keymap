@@ -16,11 +16,6 @@
             key-positions = <38 39>;
         };
 
-        no_quit {
-            bindings = <&kp Q>;
-            key-positions = <13 1>;
-        };
-
         tab {
             bindings = <&kp LG(TAB)>;
             key-positions = <37 13>;
