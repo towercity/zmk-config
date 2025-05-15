@@ -29,8 +29,13 @@
         };
 
         ent_corner {
-            bindings = <&none>;
+            bindings = <&kp ENTER>;
             key-positions = <40 41>;
+        };
+
+        enter_corner_2 {
+            bindings = <&kp ENTER>;
+            key-positions = <35 34>;
         };
     };
 
@@ -60,10 +65,10 @@
         raise {
             display-name = "Raise";
             bindings = <
-&trans  &kp LPAR          &kp UP             &kp RPAR   &trans   &trans                &trans    &kp N7  &kp N8       &kp N9  &kp BACKSPACE  &trans
-&trans  &kp LEFT          &kp DOWN_ARROW     &kp RIGHT  &trans   &trans                &kp CAPS  &kp N4  &kp N5       &kp N6  &kp SQT        &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans   &trans                &trans    &kp N1  &kp N2       &kp N3  &kp ENTER      &trans
-                                             &kp RET    &kp TAB  &mt LEFT_SHIFT TAB    &kp RET   &kp N0  &kp PAGE_UP
+&trans  &kp LPAR          &kp UP             &kp RPAR   &trans   &trans                &trans    &kp N7  &kp N8  &kp N9  &kp BACKSPACE  &trans
+&trans  &kp LEFT          &kp DOWN_ARROW     &kp RIGHT  &trans   &trans                &kp CAPS  &kp N4  &kp N5  &kp N6  &kp SQT        &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans   &trans                &trans    &kp N1  &kp N2  &kp N3  &kp ENTER      &trans
+                                             &kp RET    &kp TAB  &mt LEFT_SHIFT TAB    &kp RET   &kp N0  &kp N0
             >;
         };
 
