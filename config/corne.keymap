@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
@@ -88,10 +89,10 @@
         func {
             display-name = "Func";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT    &trans      &kp F7  &kp F8  &kp F9  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans      &trans        &trans      &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans  &trans      &trans        &trans      &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                        &trans  &trans      &trans        &bt BT_CLR  &trans  &trans
             >;
         };
     };
